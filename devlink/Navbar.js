@@ -2,8 +2,8 @@
 import React from "react";
 import * as _Builtin from "./_Builtin";
 import * as _interactions from "./interactions";
-import { SecondaryButton } from "./SecondaryButton";
-import { PrimaryButton } from "./PrimaryButton";
+// import { SecondaryButton } from "./SecondaryButton";
+// import { PrimaryButton } from "./PrimaryButton";
 import * as _utils from "./utils";
 import _styles from "./Navbar.module.css";
 
@@ -150,8 +150,8 @@ export function Navbar({ as: _Component = _Builtin.Block }) {
               )}
               tag="div"
             >
-              <SecondaryButton variant="Secondary Button" />
-              <PrimaryButton variant="Primary Button" />
+              {/* <SecondaryButton variant="Secondary Button" /> */}
+              {/* <PrimaryButton variant="Primary Button" /> */}
             </_Builtin.Block>
           </_Builtin.Block>
         </_Builtin.Block>
