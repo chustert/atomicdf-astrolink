@@ -1,6 +1,7 @@
 ---
 import { Navbar } from "../../devlink/Navbar";
 import { PrimaryButton } from "../../devlink/PrimaryButton";
+import { SecondaryButton } from "../../devlink/SecondaryButton";
 // import { NavbarLink } from "../../devlink/NavbarLink";
 ---
 
@@ -11,8 +12,8 @@ import { PrimaryButton } from "../../devlink/PrimaryButton";
     <!-- <NavbarLink slot="navbarLinksSlot" text="Blog" link={{href: "/blog/"}} /> -->
     <!-- <NavbarLink slot="navbarLinksSlot" text="Tags" link={{href: "/tags/"}} /> -->
     
-    <PrimaryButton slot="buttonsSlot" variant="Primary Button" text="Test" link={{href: "https://www.google.com"}}  />
-    <!-- <AstroButton slot="buttonsSlot"variant="Secondary" text="Test" link={{href: "https://www.google.com"}} /> -->
+    <PrimaryButton slot="buttonsSlot" variant="Primary Button" text="Primary CTA" link={{href: "https://www.google.com"}}  />
+    <SecondaryButton slot="buttonsSlot"variant="Secondary Button" text="Secondary CTA" link={{href: "https://www.google.com"}} />
   </Navbar>
 
   <slot name="pageHeader" />
