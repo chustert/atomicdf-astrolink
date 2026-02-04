@@ -62,3 +62,5 @@ webflow-cli.config.js
 # Build artifacts
 *.tgz
 *.tar.gz
+
+/devlink

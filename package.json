@@ -16,6 +16,6 @@
     "preact": "^10.25.4"
   },
   "devDependencies": {
-    "@webflow/webflow-cli": "^1.8.44"
+    "@webflow/webflow-cli": "^1.11.1"
   }
 }

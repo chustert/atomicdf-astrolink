@@ -2154,22 +2154,19 @@ textarea.w-select {
 }
 
 :root {
-  --black-dccb7db6: hsla(0, 0.00%, 0.00%, 1.00);
-  --white-1766b841: hsla(0, 0.00%, 100.00%, 1.00);
-  --lightGrey-150a737e: hsla(0, 0.00%, 95.69%, 1.00);
-  --_layout---grid--0: 0%;
-  --_layout---grid--1: 8.333333%;
-  --_layout---grid--2: 16.666666%;
-  --_layout---grid--3: 25%;
-  --_layout---grid--4: 33.333333%;
-  --_layout---grid--5: 41.666666%;
-  --_layout---grid--6: 50%;
-  --_layout---grid--7: 58.333333%;
-  --_layout---grid--8: 66.666666%;
-  --_layout---grid--9: 75%;
-  --_layout---grid--10: 83.333333%;
-  --_layout---grid--11: 91.666666%;
-  --_layout---grid--12: 100%;
+  --_grid---grid--0: 0%;
+  --_grid---grid--1: 8.333333%;
+  --_grid---grid--2: 16.666666%;
+  --_grid---grid--3: 25%;
+  --_grid---grid--4: 33.333333%;
+  --_grid---grid--5: 41.666666%;
+  --_grid---grid--6: 50%;
+  --_grid---grid--7: 58.333333%;
+  --_grid---grid--8: 66.666666%;
+  --_grid---grid--9: 75%;
+  --_grid---grid--10: 83.333333%;
+  --_grid---grid--11: 91.666666%;
+  --_grid---grid--12: 100%;
   --_typography---font-size--h1: 4rem;
   --_typography---font-size--h2: 3rem;
   --_typography---font-size--h3: 2rem;
@@ -2192,17 +2189,15 @@ textarea.w-select {
   --_typography---letter-spacing--regular: 0rem;
   --_typography---letter-spacing--small: -0.05rem;
   --_typography---letter-spacing--tiny: -0.057rem;
-  --_layout---container--small: 48rem;
-  --_layout---container--medium: 64rem;
-  --_layout---container--large: 80rem;
+  --_sizes---container--container-sm: 48rem;
+  --_sizes---container--container-md: 64rem;
+  --_sizes---container--container-lg: 80rem;
   --base-color-neutral--black\<deleted\|relume-variable-color-neutral-1\>: black;
-  --_layout---section-padding--small: 3rem;
+  --_sizes---container--padding-global: 4rem;
   --base-color-neutral--white\<deleted\|relume-variable-color-neutral-2\>: white;
   --base-color-neutral--neutral-lightest\<deleted\|relume-variable-color-neutral-3\>: #EEEEEE;
-  --_layout---section-padding--medium: 5rem;
-  --_layout---section-padding--large: 7rem;
   --base-color-neutral--neutral-light\<deleted\|relume-variable-color-neutral-5\>: #AAAAAA;
-  --_layout---section-padding--padding-global: 4rem;
+  --_grid---navigation--nav-height\<deleted\|variable-8824ef44-9f96-01ed-2984-a924e2eb14b1\>: 4.5rem;
   --base-color-system--success-green\<deleted\|relume-variable-system-color-1\>: #027A48;
   --base-color-system--success-green-light\<deleted\|relume-variable-system-color-2\>: #ECFDF3;
   --base-color-system--error-red\<deleted\|relume-variable-system-color-5\>: #B42318;
@@ -2213,6 +2208,7 @@ textarea.w-select {
   --brand--foreground: var(--_primitives---colors--neutral-lightest);
   --brand--border: var(--colors-brand--purple);
   --brand--accent: var(--colors-brand--yellow);
+  --brand--accent-2: var(--colors-brand--green-light);
   --colors-brand--black: black;
   --colors-brand--white: white;
   --colors-brand--yellow: hsla(54, 100.00%, 50.00%, 1.00);
@@ -2229,14 +2225,13 @@ textarea.w-select {
   --_primitives---colors--black: hsla(0, 0.00%, 0.00%, 1.00);
   --font-styles--heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --font-styles--body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  --_typography---line-height--xhuge: 150%;
-  --_typography---line-height--huge: 140%;
-  --_typography---line-height--xxlarge: 130%;
-  --_typography---line-height--xlarge: 120%;
-  --_typography---line-height--large: 110%;
-  --_typography---line-height--regular: 100%;
-  --_typography---line-height--small: 90%;
-  --_typography---line-height--xsmall: 80%;
+  --_typography---line-height--lh-150: 150%;
+  --_typography---line-height--lh-140: 140%;
+  --_typography---line-height--lh-130: 130%;
+  --_typography---line-height--lh-120: 120%;
+  --_typography---line-height--lh-110: 110%;
+  --_typography---line-height--lh-100: 100%;
+  --_typography---line-height--lh-90: 90%;
   --_typography---font-weight--black: 900;
   --_typography---font-weight--extra-bold: 800;
   --_typography---font-weight--bold: 700;
@@ -2250,71 +2245,66 @@ textarea.w-select {
   --_primitives---opacity--white-5: hsla(0, 0.00%, 100.00%, 0.05);
   --_primitives---opacity--white-10: hsla(0, 0.00%, 100.00%, 0.10);
   --_primitives---opacity--white-15: hsla(0, 0.00%, 100.00%, 0.15);
-  --_sizes---spacing--none: 0rem;
+  --_sizes---spacing--spacing-0: 0rem;
   --_primitives---opacity--white-20: hsla(0, 0.00%, 100.00%, 0.20);
-  --_sizes---spacing--tiny: 0.25rem;
+  --_sizes---spacing--spacing-1: 0.25rem;
   --_primitives---opacity--white-30: hsla(0, 0.00%, 100.00%, 0.30);
-  --_sizes---spacing--xxsmall: 0.5rem;
+  --_sizes---spacing--spacing-2: 0.5rem;
   --_primitives---opacity--white-40: hsla(0, 0.00%, 100.00%, 0.40);
-  --_sizes---spacing--xsmall: 1rem;
+  --_sizes---spacing--spacing-4: 1rem;
   --_primitives---opacity--white-50: hsla(0, 0.00%, 100.00%, 0.50);
-  --_sizes---spacing--small: 1.5rem;
+  --_sizes---spacing--spacing-6: 1.5rem;
   --_primitives---opacity--white-60: hsla(0, 0.00%, 100.00%, 0.60);
-  --_sizes---spacing--medium: 2rem;
+  --_sizes---spacing--spacing-8: 2rem;
   --_primitives---opacity--neutral-darkest-5: hsla(0, 0.00%, 0.00%, 0.05);
-  --_sizes---spacing--xmedium: 2.5rem;
+  --_sizes---spacing--spacing-10: 2.5rem;
   --_primitives---opacity--neutral-darkest-10: hsla(0, 0.00%, 0.00%, 0.10);
-  --_sizes---spacing--large: 3rem;
+  --_sizes---spacing--spacing-12: 3rem;
   --_primitives---opacity--neutral-darkest-15: hsla(0, 0.00%, 0.00%, 0.15);
-  --_sizes---spacing--xlarge: 4rem;
+  --_sizes---spacing--spacing-16: 4rem;
   --_primitives---opacity--neutral-darkest-20: hsla(0, 0.00%, 0.00%, 0.20);
-  --_sizes---spacing--xxlarge: 5rem;
+  --_sizes---spacing--spacing-20: 5rem;
   --_primitives---opacity--neutral-darkest-30: hsla(0, 0.00%, 0.00%, 0.30);
-  --_sizes---spacing--huge: 6rem;
+  --_sizes---spacing--spacing-24: 6rem;
   --_primitives---opacity--neutral-darkest-40: hsla(0, 0.00%, 0.00%, 0.40);
-  --_sizes---spacing--xhuge: 7rem;
+  --_sizes---spacing--spacing-28: 7rem;
   --_primitives---opacity--neutral-darkest-50: hsla(0, 0.00%, 0.00%, 0.50);
-  --_sizes---spacing--xxhuge: 10rem;
+  --_sizes---spacing--spacing-40: 10rem;
   --_primitives---opacity--neutral-darkest-60: hsla(0, 0.00%, 0.00%, 0.60);
-  --_sizes---max-width--xxsmall: 20rem;
-  --_sizes---max-width--xsmall: 25rem;
-  --_sizes---max-width--small: 30rem;
-  --_sizes---max-width--medium: 35rem;
-  --_sizes---max-width--large: 48rem;
-  --_sizes---max-width--xlarge: 64rem;
-  --_sizes---max-width--xxlarge: 80rem;
-  --_sizes---border-radius--xxsmall: 0.25rem;
-  --_sizes---border-radius--xsmall: 0.4rem;
-  --_sizes---border-radius--small: 0.5rem;
-  --_sizes---border-radius--medium: 0.625rem;
-  --_sizes---border-radius--large: 0.75rem;
-  --_sizes---border-radius--xlarge: 1.5rem;
-  --_sizes---border-width--thin: 1px;
-  --_sizes---border-width--divider-width\<deleted\|relume-variable-divider-width\>: 1px;
-  --_sizes---border-width--normal: 0.125rem;
-  --_sizes---border-width--bold: 0.25rem;
-  --_sizes---flex-gap--flex-gap-x: 1.5rem;
-  --_sizes---flex-gap--flex-gap-y: 1.5rem;
-  --_sizes---flex-gap--flex-row-gap-x: calc(var(--_sizes---flex-gap--flex-gap-x)/2*-1);
-  --_sizes---flex-gap--column-gap-x: calc(var(--_sizes---flex-gap--flex-gap-x)/2);
-  --_sizes---flex-gap--flex-row-gap-y: calc(var(--_sizes---flex-gap--flex-gap-y)/2*-1);
-  --_sizes---flex-gap--column-gap-y: calc(var(--_sizes---flex-gap--flex-gap-y)/2);
+  --_sizes---max-width--max-w-80: 20rem;
+  --_sizes---max-width--max-w-100: 25rem;
+  --_sizes---max-width--max-w-120: 30rem;
+  --_sizes---max-width--max-w-140: 35rem;
+  --_sizes---max-width--max-w-192: 48rem;
+  --_sizes---max-width--max-w-256: 64rem;
+  --_sizes---max-width--max-w-320: 80rem;
+  --_sizes---border-radius--radius-8: 0.5rem;
+  --_sizes---border-radius--radius-10: 0.625rem;
+  --_sizes---border-radius--radius-12: 0.75rem;
+  --_sizes---border-width--border-1: 1px;
+  --_sizes---border-width--border-2: 0.125rem;
+  --_sizes---border-width--border-4: 0.25rem;
+  --_grid---flex-gap--gap-x: 1.5rem;
+  --_grid---flex-gap--gap-y: 1.5rem;
+  --_grid---flex-gap--row-gap-x: calc(var(--_grid---flex-gap--gap-x)/2*-1);
+  --_grid---flex-gap--col-gap-x: calc(var(--_grid---flex-gap--gap-x)/2);
+  --_grid---flex-gap--row-gap-y: calc(var(--_grid---flex-gap--gap-y)/2*-1);
+  --_grid---flex-gap--col-gap-y: calc(var(--_grid---flex-gap--gap-y)/2);
 }
 
 body {
-  background-color: var(--_primitives---opacity--transparent);
+  background-color: var(--brand--background);
 
   font-family: var(--font-styles--body);
   color: var(--brand--text);
   font-size: var(--_typography---font-size--regular);
-  line-height: var(--_typography---line-height--xxlarge);
+  line-height: var(--_typography---line-height--lh-130);
   font-weight: var(--_typography---font-weight--regular);
   letter-spacing: var(--_typography---letter-spacing--regular);
 }
 
 @media screen and (max-width: 991px) {
   body {
-    ---mode--collection-08964abb-b13c-a798-071a-663d82b7f0a6: mode-3c569576-36bf-5a14-2ed2-a49f2f0f1fe5;
     ---mode--collection-da1ebe55-648d-6a8a-1c79-98bb242ef29f: mode-7370cfa4-d63f-42b6-395e-e75c73db5808;
     ---mode--collection-3c6a4911-12c4-e415-7fe0-514cefa2d46d: mode-3ba61b3a-01a2-4092-0538-12aa2e15cd8a;
   }
@@ -2322,7 +2312,6 @@ body {
 
 @media screen and (max-width: 767px) {
   body {
-    ---mode--collection-08964abb-b13c-a798-071a-663d82b7f0a6: mode-95f097e6-1484-614f-f3b8-03bc3eacf715;
     ---mode--collection-da1ebe55-648d-6a8a-1c79-98bb242ef29f: mode-f8fca2eb-79c2-c613-697a-48f8dbcfb72b;
     ---mode--collection-3c6a4911-12c4-e415-7fe0-514cefa2d46d: mode-675cc040-c155-61a6-0b18-f03e3ac70771;
   }
@@ -2330,7 +2319,6 @@ body {
 
 @media screen and (max-width: 479px) {
   body {
-    ---mode--collection-08964abb-b13c-a798-071a-663d82b7f0a6: mode-5a1cb886-2ecc-d7ef-c173-e4b691082102;
     ---mode--collection-da1ebe55-648d-6a8a-1c79-98bb242ef29f: mode-cee746b4-f330-499f-4478-201a436fea1e;
     ---mode--collection-3c6a4911-12c4-e415-7fe0-514cefa2d46d: mode-138519b8-a473-e4ea-3b9a-13ab5b3307de;
   }
@@ -2341,8 +2329,9 @@ h1 {
   margin-bottom: 0rem;
 
   font-family: var(--font-styles--heading);
+  color: var(--brand--heading);
   font-size: var(--_typography---font-size--h1);
-  line-height: var(--_typography---line-height--large);
+  line-height: var(--_typography---line-height--lh-110);
   font-weight: var(--_typography---font-weight--regular);
   letter-spacing: var(--_typography---letter-spacing--h1);
 }
@@ -2352,8 +2341,9 @@ h2 {
   margin-bottom: 0rem;
 
   font-family: var(--font-styles--heading);
+  color: var(--brand--heading);
   font-size: var(--_typography---font-size--h2);
-  line-height: var(--_typography---line-height--large);
+  line-height: var(--_typography---line-height--lh-110);
   font-weight: var(--_typography---font-weight--regular);
   letter-spacing: var(--_typography---letter-spacing--h2);
 }
@@ -2363,8 +2353,9 @@ h3 {
   margin-bottom: 0rem;
 
   font-family: var(--font-styles--heading);
+  color: var(--brand--heading);
   font-size: var(--_typography---font-size--h3);
-  line-height: var(--_typography---line-height--large);
+  line-height: var(--_typography---line-height--lh-110);
   font-weight: var(--_typography---font-weight--regular);
   letter-spacing: var(--_typography---letter-spacing--h3);
 }
@@ -2374,16 +2365,11 @@ h4 {
   margin-bottom: 0rem;
 
   font-family: var(--font-styles--heading);
+  color: var(--brand--heading);
   font-size: var(--_typography---font-size--h4);
-  line-height: var(--_typography---line-height--large);
+  line-height: var(--_typography---line-height--lh-110);
   font-weight: var(--_typography---font-weight--medium);
   letter-spacing: var(--_typography---letter-spacing--h4);
-}
-
-@media screen and (max-width: 767px) {
-  h4 {
-    line-height: 1.4;
-  }
 }
 
 h5 {
@@ -2391,8 +2377,9 @@ h5 {
   margin-bottom: 0rem;
 
   font-family: var(--font-styles--heading);
+  color: var(--brand--heading);
   font-size: var(--_typography---font-size--h5);
-  line-height: var(--_typography---line-height--large);
+  line-height: var(--_typography---line-height--lh-110);
   font-weight: var(--_typography---font-weight--semi-bold);
   letter-spacing: var(--_typography---letter-spacing--h5);
 }
@@ -2402,8 +2389,9 @@ h6 {
   margin-bottom: 0rem;
 
   font-family: var(--font-styles--heading);
+  color: var(--brand--heading);
   font-size: var(--_typography---font-size--h6);
-  line-height: var(--_typography---line-height--large);
+  line-height: var(--_typography---line-height--lh-110);
   font-weight: var(--_typography---font-weight--bold);
   letter-spacing: var(--_typography---letter-spacing--h6);
   text-transform: uppercase;
@@ -2462,13 +2450,4 @@ figure {
 figcaption {
   margin-top: 0.25rem;
   text-align: center;
-}
-
-.w-layout-grid {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-row-gap: 16px;
-  grid-column-gap: 16px;
 }
