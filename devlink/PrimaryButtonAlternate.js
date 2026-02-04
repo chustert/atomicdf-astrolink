@@ -24,12 +24,7 @@ export function PrimaryButtonAlternate({
 
   return visibility ? (
     <_Component
-      className={_utils.cx(
-        _styles,
-        "button",
-        "is-alternate",
-        _activeStyleVariant
-      )}
+      className={_utils.cx(_styles, "btn", "is-alternate", _activeStyleVariant)}
       button={true}
       block=""
       options={link}
