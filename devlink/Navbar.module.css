@@ -30,6 +30,20 @@
   padding-left: var(--_sizes---container--padding-global);
 }
 
+.container-md {
+  width: 100%;
+  max-width: var(--_sizes---container--container-md);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-lg {
+  width: 100%;
+  max-width: var(--_sizes---container--container-lg);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .navbar_logo-link {
   padding-left: 0px;
 }
@@ -82,103 +96,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-  }
-}
-
-.navbar_link {
-  display: inline-block;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 0.5rem 1rem;
-}
-
-.navbar_link:global(.w--current) {
-  color: hsla(0, 0.00%, 17.25%, 0.50);
-}
-
-@media screen and (max-width: 991px) {
-  .navbar_link {
-    position: static;
-    padding: 0.75rem 0rem;
-    font-size: 1.125rem;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .navbar1_menu-dropdown {
-    width: 100%;
-    font-size: 1.125rem;
-  }
-}
-
-.navbar1_dropdown-toggle {
-  display: flex;
-  padding: 0.5rem 1rem;
-  align-items: center;
-  grid-column-gap: 0.5rem;
-}
-
-@media screen and (max-width: 991px) {
-  .navbar1_dropdown-toggle {
-    display: flex;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 0rem;
-    align-items: center;
-  }
-}
-
-.dropdown-chevron {
-  display: flex;
-  width: 1rem;
-  height: 1rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 991px) {
-  .dropdown-chevron {
-    left: auto;
-    top: auto;
-    right: 0%;
-    bottom: auto;
-  }
-}
-
-.navbar1_dropdown-list:global(.w--open) {
-  padding: 0.5rem;
-  border: var(--_sizes---border-width--border-1) solid var(--brand--border);
-  border-radius: var(--_sizes---border-radius--radius-8);
-  background-color: var(--brand--background);
-}
-
-@media screen and (max-width: 991px) {
-  .navbar1_dropdown-list {
-    position: static;
-    overflow: hidden;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .navbar1_dropdown-list:global(.w--open) {
-    padding: 0px;
-    border-style: none;
-  }
-}
-
-.navbar1_dropdown-link {
-  padding: 0.5rem 1rem;
-}
-
-.navbar1_dropdown-link:global(.w--current) {
-  color: var(--_primitives---colors--neutral-darkest);
-}
-
-@media screen and (max-width: 991px) {
-  .navbar1_dropdown-link {
-    width: auto;
-    padding: 0.75rem 0rem 0.75rem 5%;
   }
 }
 
