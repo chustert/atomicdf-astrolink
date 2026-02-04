@@ -16,7 +16,7 @@ export function LinkButtonAlternate({
 }) {
   return visibility ? (
     <_Component
-      className={_utils.cx(_styles, "btn", "is-link", "is-alternate")}
+      className={_utils.cx(_styles, "button", "is-link", "is-alternate")}
       button={true}
       block=""
       options={link}

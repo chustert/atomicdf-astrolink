@@ -24,7 +24,7 @@ export function PrimaryButton({
 
   return visibility ? (
     <_Component
-      className={_utils.cx(_styles, "btn", _activeStyleVariant)}
+      className={_utils.cx(_styles, "button", _activeStyleVariant)}
       button={true}
       block=""
       options={link}

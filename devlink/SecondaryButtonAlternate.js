@@ -26,7 +26,7 @@ export function SecondaryButtonAlternate({
     <_Component
       className={_utils.cx(
         _styles,
-        "btn",
+        "button",
         "is-secondary",
         "is-alternate",
         _activeStyleVariant

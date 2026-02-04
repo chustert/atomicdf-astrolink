@@ -16,7 +16,7 @@ export function LinkButton({
 }) {
   return visibility ? (
     <_Component
-      className={_utils.cx(_styles, "btn", "is-link")}
+      className={_utils.cx(_styles, "button", "is-link")}
       button={true}
       block=""
       options={link}

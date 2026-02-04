@@ -1,4 +1,4 @@
-.btn {
+.button {
   padding: 0.75rem 1.5rem;
 
   border: 1px solid var(--_primitives---colors--neutral-darkest);
@@ -10,11 +10,11 @@
   text-decoration: none;
 }
 
-.btn:where(.w-variant-726e05c1-3c81-2281-22ac-c83412a414aa) {
+.button:where(.w-variant-726e05c1-3c81-2281-22ac-c83412a414aa) {
   padding: 0.5rem 1.25rem;
 }
 
-.btn.is-link {
+.button.is-link {
   padding: 0.25rem 0rem;
 
   border-style: none;
@@ -26,17 +26,17 @@
   text-decoration: none;
 }
 
-.btn.is-link.is-alternate {
+.button.is-link.is-alternate {
   background-color: var(--_primitives---opacity--transparent);
   color: var(--_primitives---colors--white);
 }
 
-.btn.is-link.is-icon {
+.button.is-link.is-icon {
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
 }
 
-.btn.is-icon {
+.button.is-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,34 +44,34 @@
   grid-row-gap: 0.75rem;
 }
 
-.btn.is-secondary {
+.button.is-secondary {
   background-color: var(--_primitives---opacity--transparent);
   color: var(--_primitives---colors--neutral-darkest);
 }
 
-.btn.is-secondary:where(.w-variant-a33ea806-696f-c0be-73e4-9c5ddd05bc05) {
+.button.is-secondary:where(.w-variant-a33ea806-696f-c0be-73e4-9c5ddd05bc05) {
   padding: 0.5rem 1.25rem;
 }
 
-.btn.is-secondary.is-alternate {
+.button.is-secondary.is-alternate {
   background-color: var(--_primitives---opacity--transparent);
   color: var(--_primitives---colors--white);
 }
 
-.btn.is-secondary.is-alternate:where(.w-variant-7a1ecf71-8740-6df7-b33e-cfb5f29b2f2e) {
+.button.is-secondary.is-alternate:where(.w-variant-7a1ecf71-8740-6df7-b33e-cfb5f29b2f2e) {
   padding: 0.5rem 1.25rem;
 }
 
-.btn.is-small {
+.button.is-small {
   padding: 0.5rem 1.25rem;
 }
 
-.btn.is-alternate {
+.button.is-alternate {
   border-color: var(--_primitives---colors--white);
   background-color: var(--_primitives---colors--white);
   color: var(--_primitives---colors--neutral-darkest);
 }
 
-.btn.is-alternate:where(.w-variant-69315b24-0561-d93d-fa25-fcdcfbd13c7c) {
+.button.is-alternate:where(.w-variant-69315b24-0561-d93d-fa25-fcdcfbd13c7c) {
   padding: 0.5rem 1.25rem;
 }

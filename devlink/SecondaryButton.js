@@ -24,7 +24,12 @@ export function SecondaryButton({
 
   return visibility ? (
     <_Component
-      className={_utils.cx(_styles, "btn", "is-secondary", _activeStyleVariant)}
+      className={_utils.cx(
+        _styles,
+        "button",
+        "is-secondary",
+        _activeStyleVariant
+      )}
       button={true}
       block=""
       options={link}
